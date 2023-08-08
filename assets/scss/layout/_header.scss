@@ -1,4 +1,28 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.header {
+  background: $primary;
+  font-size: 20px;
+
+  .nav {
+    padding: 16px 0;
+  }
+  
+  img {
+    width: 80px;
+    transition: .5s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  
+  ul {
+    gap: 64px;
+  }
+  
+  a {
+    color: #FFFFFF;
+    transition: .8s;
+    &:hover {
+      color: $text-color-black;
+    }
+  }
 }
