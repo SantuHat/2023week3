@@ -1,28 +1,72 @@
 .header {
   background: $primary;
   font-size: 20px;
+  padding: 16px 15px;
 
-  .nav {
-    padding: 16px 0;
-  }
-  
   img {
     width: 80px;
     transition: .5s;
+
     &:hover {
       transform: scale(1.2);
     }
   }
-  
+
   ul {
     gap: 64px;
-  }
-  
-  a {
-    color: #FFFFFF;
-    transition: .8s;
-    &:hover {
-      color: $text-color-black;
+
+    a {
+      color: #FFFFFF;
+      transition: .8s;
+      padding: 12px 0;
+
+      &:hover {
+        color: $text-color-black;
+      }
+
+      @media (max-width:767px) {
+        display: block;
+
+        &:hover {
+          background: #8f0400;
+          color: #FFFFFF;
+        }
+      }
     }
+  }
+
+}
+
+@media (max-width:992px) {
+  .header {
+    padding: 16px 36px;
+  }
+}
+
+@media (max-width:767px) {
+  .header {
+    padding: 0;
+    border-bottom: 1px solid $text-color-white;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+
+    ul {
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 0;
+
+      li {
+        width: 50%;
+        text-align: center;
+        border: 1px solid $text-color-white;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .logo {
+    margin: 16px 0 16px 15px;
   }
 }
