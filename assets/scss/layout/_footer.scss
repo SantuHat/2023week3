@@ -2,9 +2,11 @@
   background: $primary;
   padding-top: 48px;
 
-  .section-left {
+  .top {
     border-bottom: 1px solid #FFFFFF;
+  }
 
+  .section-left {
     @media (max-width:767px) {
       border-bottom: 0;
     }
